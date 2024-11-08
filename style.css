@@ -1,174 +1,300 @@
 
 
-body
-    {
-    font-family: 'Roboto';
-    }
+/* Style global du body */
+body {
+  margin: 0;
+  font: bold 14px/1.4 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
 
-  .roboto-thin {
-    font-family: "Roboto", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-  }
-  
-  .roboto-light {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .roboto-regular {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .roboto-medium {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  .roboto-bold {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .roboto-black {
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-  }
-  
-  .roboto-thin-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 100;
-    font-style: italic;
-  }
-  
-  .roboto-light-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: italic;
-  }
-  
-  .roboto-regular-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  .roboto-medium-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: italic;
-  }
-  
-  .roboto-bold-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: italic;
-  }
-  
-  .roboto-black-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-    font-style: italic;
-  }
-  
+/* Vidéo de fond */
+#background-video {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
 
-.abhaya-libre-regular {
+/* Barre de navigation */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* background-color: rgba(0, 0, 0, 0.5); Fond semi-transparent */
+  padding: 10px 0;
+  z-index: 10;
+}
+
+ul {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  margin: 0 15px;
+}
+
+a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  padding: 15px 20px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ddd; /* Change légèrement la couleur au survol */
+}
+
+a:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  background-color: #fff;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+/* Styles des titres et du contenu */
+.content {
+  display: flex;
+  flex-direction: column;          /* Aligne les éléments en colonne */
+  align-items: center;             /* Centre horizontalement */
+  justify-content: center;         /* Centre verticalement */
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centre précisément */
+  z-index: 5;
+}
+
+h1 {
   font-family: "Abhaya Libre", serif;
+  font-size: 8rem;
   font-weight: 400;
-  font-style: normal;
+  margin: 0;
 }
 
-.abhaya-libre-medium {
-  font-family: "Abhaya Libre", serif;
-  font-weight: 500;
-  font-style: normal;
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  margin: 0;
 }
 
-.abhaya-libre-semibold {
-  font-family: "Abhaya Libre", serif;
-  font-weight: 600;
-  font-style: normal;
+/* Bouton de la vidéo (si utilisé) */
+#btnVideo {
+  font-size: 1.5rem;
+  background: transparent;
+  border: none;
+  color: white;
+  margin: 20px auto 0;
+  cursor: pointer;
+  transition: color 0.3s ease;
 }
 
-.abhaya-libre-bold {
-  font-family: "Abhaya Libre", serif;
-  font-weight: 700;
-  font-style: normal;
+#btnVideo:hover {
+  color: #ddd;
 }
 
-.abhaya-libre-extrabold {
-  font-family: "Abhaya Libre", serif;
-  font-weight: 800;
-  font-style: normal;
-}
-
-h1{
-    font-family: "Abhaya Libre";
-    font-size: 120pt;
-    text-align: center;
-    font-weight: 400 ;
-    color: rgb(232, 60, 87);
-}
-
-h2{
-    font-family: "Abhaya Libre";
-    font-size: 20pt;
-    text-align: center;
-    color: rgb(232, 60, 87);
-}
-
-/* The side navigation menu */
-.sidenav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
-    background-color: #84e1d0; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+/* Media queries pour petits écrans */
+@media (max-width: 768px) {
+  h1 {
+      font-size: 6rem;
   }
+  
+  h2 {
+      font-size: 1.5rem;
+  }
+}
+
+@media (max-height: 300px) {
+  ul {
+      margin-top: 40px;
+  }
+}
+
+/* Position et taille du logo */
+#myLogo {
+  max-width: 150px;                /* Limite la taille du logo */
+  height: auto;                    /* Garde le ratio d'origine */
+  margin-bottom: 20px;             /* Espace entre le logo et le titre */
+}
+
+
+/* Réduction de la taille du logo sur les petits écrans */
+@media (max-width: 768px) {
+  #myLogo {
+      width: 100px;         /* Ajuste la taille pour les petits écrans */
+      max-width: 100px;
+  }
+}
+
+    /* .roboto-thin {
+      font-family: "Roboto", sans-serif;
+      font-weight: 100;
+      font-style: normal;
+    }
+    
+    .roboto-light {
+      font-family: "Roboto", sans-serif;
+      font-weight: 300;
+      font-style: normal;
+    }
+    
+    .roboto-regular {
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+    
+    .roboto-medium {
+      font-family: "Roboto", sans-serif;
+      font-weight: 500;
+      font-style: normal;
+    }
+    
+    .roboto-bold {
+      font-family: "Roboto", sans-serif;
+      font-weight: 700;
+      font-style: normal;
+    }
+    
+    .roboto-black {
+      font-family: "Roboto", sans-serif;
+      font-weight: 900;
+      font-style: normal;
+    }
+    
+    .roboto-thin-italic {
+      font-family: "Roboto", sans-serif;
+      font-weight: 100;
+      font-style: italic;
+    }
+    
+    .roboto-light-italic {
+      font-family: "Roboto", sans-serif;
+      font-weight: 300;
+      font-style: italic;
+    }
+    
+    .roboto-regular-italic {
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      font-style: italic;
+    }
+    
+    .roboto-medium-italic {
+      font-family: "Roboto", sans-serif;
+      font-weight: 500;
+      font-style: italic;
+    }
+    
+    .roboto-bold-italic {
+      font-family: "Roboto", sans-serif;
+      font-weight: 700;
+      font-style: italic;
+    }
+    
+    .roboto-black-italic {
+      font-family: "Roboto", sans-serif;
+      font-weight: 900;
+      font-style: italic;
+    }
+    
+  
+  .abhaya-libre-regular {
+    font-family: "Abhaya Libre", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .abhaya-libre-medium {
+    font-family: "Abhaya Libre", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .abhaya-libre-semibold {
+    font-family: "Abhaya Libre", serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .abhaya-libre-bold {
+    font-family: "Abhaya Libre", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .abhaya-libre-extrabold {
+    font-family: "Abhaya Libre", serif;
+    font-weight: 800;
+    font-style: normal;
+  } */
+
+    /* The side navigation menu */
+/* .sidenav { */
+    /* height: 100%; /* 100% Full-height */
+    /* width: 0; /* 0 width - change this with JavaScript */
+    /* position: fixed; /* Stay in place */
+    /* z-index: 1; /* Stay on top */
+    /* top: 0; /* Stay at the top */
+    /* left: 0;
+    background-color: #2d268b; /* Black*/
+    /* overflow-x: hidden; /* Disable horizontal scroll */
+    /* padding-top: 60px; /* Place content 60px from the top */
+    /* transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  /* }
   
   /* The navigation menu links */
-  .sidenav a {
+  /* .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
     color: #ffffff;
     display: block;
     transition: 0.3s;
-  }
+  } */
   
   /* When you mouse over the navigation links, change their color */
-  .sidenav a:hover {
+  /* .sidenav a:hover {
     color: rgb(232, 60, 87);
-  }
+  } */
   
   /* Position and style the close button (top right corner) */
-  .sidenav .closebtn {
+  /* .sidenav .closebtn {
     position: absolute;
     top: 0;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
-  }
+  } */
   
   /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-  #main {
+ /*  #main {
     transition: margin-left .5s;
     padding: 20px;
-  }
+  } */
   
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
+  /* @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
-  }
+  } */
