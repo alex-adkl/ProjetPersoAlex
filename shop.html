@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Logo</div>
+        <nav>
+            <ul>
+                <li><a onclick="window.location.href='index.html';" href="#">Home</a></li>
+                <li><a onclick="window.location.href='shop.html';" href="#">Shop</a></li>
+                <li><a onclick="window.location.href='apropos.html';" href="#">À propos</a></li>
+                <li><a onclick="window.location.href='contact.html';" href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <button class="btn">Sign in</button>
+            <button class="btn primary">Register</button>
+        </div>
+    </header>
+    <main class="main">
+        <aside class="sidebar">
+            <div class="filter-group">
+                <h3>Keywords</h3>
+                <div>
+                    <span class="filter-tag">Spring</span>
+                    <span class="filter-tag">Smart</span>
+                    <span class="filter-tag">Modern</span>
+                </div>
+            </div>
+            <div class="filter-group">
+                <h3>Label</h3>
+                <input type="range" min="0" max="100" value="50">
+            </div>
+            <div class="filter-group">
+                <h3>Color</h3>
+                <label><input type="checkbox"> Label</label>
+                <label><input type="checkbox"> Label</label>
+                <label><input type="checkbox"> Label</label>
+            </div>
+            <div class="filter-group">
+                <h3>Size</h3>
+                <label><input type="checkbox"> Label</label>
+                <label><input type="checkbox"> Label</label>
+                <label><input type="checkbox"> Label</label>
+            </div>
+        </aside>
+        <section class="content">
+            <div class="controls">
+                <button class="btn small">New</button>
+                <button class="btn small">Price ascending</button>
+                <button class="btn small">Price descending</button>
+                <button class="btn small">Rating</button>
+            </div>
+            <div class="gallery">
+                <div class="card">
+                    <div class="image-placeholder"></div>
+                    <p>Text</p>
+                    <p>$0</p>
+                </div>
+                <div class="card">
+                    <div class="image-placeholder"></div>
+                    <p>Text</p>
+                    <p>$0</p>
+                </div>
+                <!-- Duplicate the card structure as needed -->
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-column">
+            <h4>Use cases</h4>
+            <a href="#">UI design</a>
+            <a href="#">UX design</a>
+        </div>
+        <div class="footer-column">
+            <h4>Explore</h4>
+            <a href="#">Design</a>
+            <a href="#">Prototyping</a>
+        </div>
+        <div class="footer-column">
+            <h4>Resources</h4>
+            <a href="#">Blog</a>
+            <a href="#">Best practices</a>
+        </div>
+    </footer>
+</body>
+</html>

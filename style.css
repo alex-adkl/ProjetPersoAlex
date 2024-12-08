@@ -45,7 +45,7 @@ a {
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.15em;
-  padding: 15px 20px;
+  padding: 10px 20px;
   position: relative;
   transition: color 0.3s ease;
 }
@@ -143,8 +143,9 @@ h2 {
   #myLogo {
       width: 100px;         /* Ajuste la taille pour les petits écrans */
       max-width: 100px;
-  }
-}
+}}
+
+
 
     /* .roboto-thin {
       font-family: "Roboto", sans-serif;

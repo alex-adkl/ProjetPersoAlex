@@ -1,0 +1,41 @@
+[
+    {
+      "nom": "Petit tigre",
+      "id": 1,
+      "type": "tirage",
+      "anneeDeProduction": "2023",
+      "format": "A5",
+      "nombreDeCouleurs": 1,
+      "texte": "Linogravure taillée à la main et imprimée sur papier blanc 250g avec une encre à base d’huile. Dimensions : 14,8x21 cm (A5). Chaque impression est une œuvre unique, réalisée entièrement à la main. D’un exemplaire à l'autre, les tirages peuvent présenter de légères variations. Édition ouverte.",
+      "couleur": {
+        "Bleu": 2,
+        "Bleu fonce": 4,
+        "Rose": 2,
+        "Violet": 5,
+        "Vert clair": 4},
+      "image": [
+        "images/Petit_tigre.png",
+        "images/Petit_tigre_rose.png"],
+      "tags": ["tigre", "illustration"]
+    },
+  
+    {
+        "nom": "Petit lapin",
+        "id": 2,
+        "type": "tirage",
+        "anneeDeProduction": "2023",
+        "format": "A5",
+        "nombreDeCouleurs": 1,
+        "texte": "Linogravure taillée à la main et imprimée sur papier blanc 250g avec une encre à base d’huile. Dimensions : 14,8x21 cm (A5). Chaque impression est une œuvre unique, réalisée entièrement à la main. D’un exemplaire à l'autre, les tirages peuvent présenter de légères variations. Édition ouverte.",
+        "couleur": {
+          "Vert clair": 2,
+          "Vert fonce": 4,
+          "Rose": 2},
+        "image": [
+          "images/Petit_lapin.png",
+          "images/Petit_lapin_vert.png"],
+        "tags": ["lapin", "illustration"]
+      }
+    
+  ]
+  
